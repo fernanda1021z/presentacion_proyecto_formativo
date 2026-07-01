@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instintos Sex Shop – Presentación del Proyecto</title>
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-logo">
+        <div class="logo-mark">
+          <span class="logo-i"></span>
+          <span class="logo-text">INSTINTOS</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio"        class="nav-link active">Inicio</a></li>
+        <li><a href="#introduccion"  class="nav-link">Introducción</a></li>
+        <li><a href="#problema"      class="nav-link">Problema</a></li>
+        <li><a href="#objetivos"     class="nav-link">Objetivos</a></li>
+        <li class="nav-dropdown">
+          <a href="#diagramas" class="nav-link nav-dropdown-toggle">Modelado <span class="caret">▾</span></a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="#diagramas" class="nav-link">Diagramas del Sistema</a></li>
+            <li><a href="#modelo-conceptual" class="nav-link">Modelo Conceptual</a></li>
+            <li><a href="#modelo-logico" class="nav-link">Modelo Lógico</a></li>
+            <li><a href="#modelo-fisico" class="nav-link">Modelo Físico</a></li>
+          </ul>
+        </li>
+        <li><a href="#arquitectura"  class="nav-link">Arquitectura</a></li>
+        <li><a href="#patrones"      class="nav-link">Patrones</a></li>
+        <li><a href="#estandares"    class="nav-link">Estándares</a></li>
+        <li><a href="#metodologia"   class="nav-link">Metodología</a></li>
+        <li class="nav-dropdown">
+          <a href="#mapa-navegacion" class="nav-link nav-dropdown-toggle">Recursos <span class="caret">▾</span></a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="#mapa-navegacion" class="nav-link">Mapa de Navegación</a></li>
+            <li><a href="#manual-corporativo" class="nav-link">Manual Corporativo</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- =====================
+       HERO / INICIO
+       ===================== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-orb orb3"></div>
+    </div>
+
+    <div class="hero-logo-watermark" aria-hidden="true">
+      <img src="IMG/logo-instintos.png" alt="" class="wm-logo-img" />
+    </div>
+
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+        Instintos <span class="accent">Sex Shop</span>
+      </h1>
+      <p class="hero-hook" data-aos="fade-up" data-aos-delay="200">
+        Privacidad, confianza y placer al alcance de un clic.
+      </p>
+      <p class="hero-sub" data-aos="fade-up" data-aos-delay="300">
+        Descubre productos de calidad con envíos discretos y una experiencia de compra cómoda y segura.
+      </p>
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
+        <a href="#introduccion" class="btn btn-primary">Ver Presentación</a>
+      </div>
+      <div class="hero-badges" data-aos="fade-up" data-aos-delay="500">
+        <div class="badge"><span class="badge-icon">🔒</span> 100% Privado</div>
+        <div class="badge"><span class="badge-icon">📦</span> Envío Discreto</div>
+        <div class="badge"><span class="badge-icon">✅</span> Seguro y Confiable</div>
+      </div>
+    </div>
+    <a href="#introduccion" class="scroll-indicator">
+      <div class="scroll-dot"></div>
+      <span>Desliza para continuar</span>
+    </a>
+  </section>
+
+  <!-- =====================
+       INTRODUCCIÓN
+       ===================== -->
+  <section class="section" id="introduccion">
+    <div class="container">
+      <div class="section-eyebrow">Introducción</div>
+      <h2 class="section-title">¿Por qué <span class="accent">Instintos</span>?</h2>
+      <p class="section-lead">
+        La página web de Instintos Sex Shop se diferencia de otras tiendas en línea porque está diseñada para
+        ofrecer una experiencia más cómoda, rápida y segura para los clientes.
+      </p>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">🎨</div>
+          <h3>Diseño Atractivo</h3>
+          <p>Interfaz intuitiva y fácil de usar que permite encontrar productos de manera sencilla, con navegación organizada por categorías.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔐</div>
+          <h3>Máxima Privacidad</h3>
+          <p>Brinda mayor privacidad en las compras, con información clara de cada producto y un proceso de compra totalmente discreto.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3>Mobile First</h3>
+          <p>Página adaptada para dispositivos móviles, permitiendo comprar desde cualquier lugar y en cualquier momento.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💬</div>
+          <h3>Atención al Cliente</h3>
+          <p>Enfocada en atención personalizada, promociones exclusivas y facilidad para realizar pedidos con experiencia confiable.</p>
+        </div>
+      </div>
+      <div class="cta-banner">
+        <p class="cta-hook">Privacidad, confianza y placer al alcance de un clic.</p>
+        <a href="#" class="btn btn-primary">Compra ahora y disfruta con total privacidad →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       PROBLEMA
+       ===================== -->
+  <section class="section section-dark" id="problema">
+    <div class="container">
+      <div class="section-eyebrow light">Situación Actual</div>
+      <h2 class="section-title light">El <span class="accent">Problema</span></h2>
+      <div class="problem-layout">
+        <div class="problem-desc">
+          <p>Instintos Sexshop actualmente gestiona ventas y atención al cliente a través de múltiples redes sociales
+          y aplicaciones de mensajería. Esta dispersión genera una serie de problemas críticos que afectan tanto al
+          negocio como a sus clientes.</p>
+          <ul class="problem-list">
+            <li><span class="problem-num">01</span> Respuestas inconsistentes a clientes</li>
+            <li><span class="problem-num">02</span> Pérdida de oportunidades de venta</li>
+            <li><span class="problem-num">03</span> Dificultad en el control de inventario</li>
+            <li><span class="problem-num">04</span> Pobre experiencia del usuario</li>
+          </ul>
+        </div>
+        <div class="problem-question">
+          <div class="question-card">
+            <div class="question-label">Pregunta Problema</div>
+            <p>¿Cómo una tienda virtual propia para Instintos Sexshop puede romper el tabú y la timidez del cliente
+            para comprar con total discreción, eliminando a la vez el desorden de vender manualmente por WhatsApp y
+            redes sociales?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       OBJETIVOS
+       ===================== -->
+  <section class="section" id="objetivos">
+    <div class="container">
+      <div class="section-eyebrow">Objetivos</div>
+      <h2 class="section-title">¿Qué queremos <span class="accent">lograr</span>?</h2>
+      <div class="objective-general">
+        <div class="objective-badge">Objetivo General</div>
+        <p>Diseñar e implementar una página web e-commerce para Instintos Sexshop que centralice la gestión de
+        clientes, productos, ventas y marketing digital, permitiendo realizar compras rápidas, seguras y confiables.</p>
+      </div>
+      <h3 class="sub-title">Objetivos Específicos</h3>
+      <div class="specific-grid">
+        <div class="specific-item">
+          <div class="specific-icon">📂</div>
+          <p>Crear un catálogo organizado por categorías y secciones.</p>
+        </div>
+        <div class="specific-item">
+          <div class="specific-icon">💳</div>
+          <p>Integrar métodos de pago seguros y adaptados al mercado local.</p>
+        </div>
+        <div class="specific-item">
+          <div class="specific-icon">⚙️</div>
+          <p>Implementar un panel administrativo para autogestión del catálogo.</p>
+        </div>
+        <div class="specific-item">
+          <div class="specific-icon">📊</div>
+          <p>Automatizar o permitir gestión manual del control de inventario.</p>
+        </div>
+        <div class="specific-item">
+          <div class="specific-icon">💬</div>
+          <p>Mejorar la atención al cliente con chat integrado y formularios.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- =====================
+       DIAGRAMAS
+       ===================== -->
+  <section class="section section-alt" id="diagramas">
+    <div class="container">
+      <div class="section-eyebrow">Modelado</div>
+      <h2 class="section-title">Diagramas del <span class="accent">Sistema</span></h2>
+      <div class="diagrams-grid single">
+
+        <div class="diagram-card">
+          <div class="diagram-img-wrap">
+            <img src="IMG/todos.png" alt="Diagramas del Sistema" class="diagram-img" />
+          </div>
+          <div class="diagram-label">Diagramas del Sistema</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       MODELO CONCEPTUAL
+       ===================== -->
+  <section class="section" id="modelo-conceptual">
+    <div class="container">
+      <div class="section-eyebrow">Modelado</div>
+      <h2 class="section-title">Modelo <span class="accent">Conceptual</span></h2>
+      <p class="section-lead">Entidades principales del negocio: Usuarios, Categorías, Productos, Pedidos, Pedido Items, Pagos, Envíos, Reseñas, Carrito e Inventario, y sus relaciones de alto nivel sin entrar en detalles técnicos de implementación.</p>
+      <div class="diagrams-grid single">
+
+        <div class="diagram-card">
+          <div class="diagram-img-wrap">
+            <img src="IMG/modelo_conceptual.png" alt="Modelo Conceptual" class="diagram-img" />
+          </div>
+          <div class="diagram-label">Modelo Conceptual</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       MODELO LÓGICO
+       ===================== -->
+  <section class="section section-alt" id="modelo-logico">
+    <div class="container">
+      <div class="section-eyebrow">Modelado</div>
+      <h2 class="section-title">Modelo <span class="accent">Lógico</span></h2>
+      <p class="section-lead">Un usuario realiza múltiples pedidos y escribe reseñas; cada pedido contiene varios ítems y genera un pago y un envío; cada producto pertenece a una categoría y puede recibir reseñas y movimientos de inventario.</p>
+      <div class="diagrams-grid single">
+
+        <div class="diagram-card">
+          <div class="diagram-img-wrap">
+            <img src="IMG/modelo_logico.png" alt="Modelo Lógico" class="diagram-img" />
+          </div>
+          <div class="diagram-label">Modelo Lógico</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       MODELO FÍSICO
+       ===================== -->
+  <section class="section" id="modelo-fisico">
+    <div class="container">
+      <div class="section-eyebrow">Modelado</div>
+      <h2 class="section-title">Modelo <span class="accent">Físico</span></h2>
+      <p class="section-lead">Tablas, campos y tipos de datos en MySQL 8.0 con motor InnoDB, charset utf8mb4, claves primarias AUTO_INCREMENT y claves foráneas que garantizan la integridad referencial del sistema.</p>
+      <div class="diagrams-grid single">
+
+        <div class="diagram-card">
+          <div class="diagram-img-wrap">
+            <img src="IMG/modelo_fisico.png" alt="Modelo Físico de la Base de Datos" class="diagram-img" />
+          </div>
+          <div class="diagram-label">Modelo Físico de la Base de Datos</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- =====================
+       ARQUITECTURA
+       ===================== -->
+  <section class="section" id="arquitectura">
+    <div class="container">
+      <div class="section-eyebrow">Tecnología</div>
+      <h2 class="section-title">Arquitectura <span class="accent">Cliente-Servidor</span></h2>
+      <p class="section-lead">La plataforma utilizará una arquitectura cliente-servidor con las siguientes capas tecnológicas.</p>
+      <div class="stack-grid">
+        <div class="stack-layer">
+          <div class="stack-tag frontend">Frontend</div>
+          <div class="stack-items">
+            <span class="tech-chip">HTML5</span>
+            <span class="tech-chip">CSS3</span>
+            <span class="tech-chip">JavaScript</span>
+          </div>
+        </div>
+        <div class="stack-arrow">→</div>
+        <div class="stack-layer">
+          <div class="stack-tag backend">Backend</div>
+          <div class="stack-items">
+            <span class="tech-chip">PHP</span>
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">API REST</span>
+          </div>
+        </div>
+        <div class="stack-arrow">→</div>
+        <div class="stack-layer">
+          <div class="stack-tag database">Base de Datos</div>
+          <div class="stack-items">
+            <span class="tech-chip">MySQL</span>
+          </div>
+        </div>
+        <div class="stack-arrow">→</div>
+        <div class="stack-layer">
+          <div class="stack-tag external">Externos</div>
+          <div class="stack-items">
+            <span class="tech-chip">Pasarela Pago</span>
+            <span class="tech-chip">Email</span>
+            <span class="tech-chip">WhatsApp</span>
+            <span class="tech-chip">Redes Sociales</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       PATRONES DE DISEÑO DE SOFTWARE
+       ===================== -->
+  <section class="section section-alt" id="patrones">
+    <div class="container">
+      <div class="section-eyebrow">Arquitectura de Software</div>
+      <h2 class="section-title">Patrones de Diseño de <span class="accent">Software</span></h2>
+      <div class="patterns-grid">
+        <div class="pattern-card">
+          <div class="pattern-icon">🖥️</div>
+          <h3>Arquitectura Cliente-Servidor</h3>
+          <p>El navegador (cliente) envía solicitudes HTTP a un servidor Apache que ejecuta la lógica en PHP y consulta la base de datos MySQL.</p>
+        </div>
+
+        <div class="pattern-card">
+          <div class="pattern-icon">🧩</div>
+          <h3>MVC (Modelo-Vista-Controlador)</h3>
+          <p>El backend separa el Modelo (consultas a MySQL), la Vista (templates HTML/PHP) y el Controlador (recibe peticiones e invoca al modelo), facilitando mantenimiento y trabajo en equipo.</p>
+        </div>
+
+        <div class="pattern-card">
+          <div class="pattern-icon">🔌</div>
+          <h3>API REST</h3>
+          <p>Endpoints organizados por recurso (/api/productos, /api/pedidos) que desacoplan frontend y backend y permiten integrar la pasarela de pagos y una futura app móvil.</p>
+        </div>
+        <div class="pattern-card">
+          <div class="pattern-icon">📦</div>
+          <h3>Patrón Repositorio</h3>
+          <p>Encapsula todas las consultas a la base de datos en clases repositorio, evitando SQL disperso en los controladores y facilitando cambiar de motor de BD a futuro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       ESTÁNDARES DE CODIFICACIÓN
+       ===================== -->
+  <section class="section" id="estandares">
+    <div class="container">
+      <div class="section-eyebrow">Buenas Prácticas</div>
+      <h2 class="section-title">Estándares de <span class="accent">Codificación</span></h2>
+      <p class="section-lead">Reglas y convenciones que se seguirán durante el desarrollo para garantizar un código limpio, legible y fácil de mantener.</p>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">🔤</div>
+          <h3>Nomenclatura</h3>
+          <p>Tablas BD en snake_case plural (usuarios, productos), claves primarias id_{tabla}, variables PHP/JS en camelCase, clases PHP en PascalCase y constantes en UPPER_SNAKE_CASE.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🐘</div>
+          <h3>Reglas de Codificación PHP</h3>
+          <p>Indentación de 4 espacios, líneas máximo de 120 caracteres, uso obligatorio de PDO con consultas preparadas y separación en capas: model/, controller/, views/.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Reglas de Codificación JavaScript</h3>
+          <p>Uso de ES6+ (const/let, arrow functions, async/await), sin uso de var, y módulos separados por responsabilidad: cart.js, checkout.js, admin.js.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🗄️</div>
+          <h3>Reglas de Base de Datos</h3>
+          <p>Toda tabla con clave primaria AUTO_INCREMENT id_{tabla}, fechas en DATETIME con DEFAULT NOW(), contraseñas siempre en hash bcrypt y transacciones para operaciones multi-tabla.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔗</div>
+          <h3>Rutas y Archivos</h3>
+          <p>Rutas API en kebab-case plural (/api/productos), archivos PHP en snake_case, IDs HTML en kebab-case y clases CSS bajo la metodología BEM.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📝</div>
+          <h3>Documentación del Código</h3>
+          <p>Comentarios PHPDoc obligatorios en todas las funciones públicas y manejo de errores con try/catch en cada llamada asíncrona a la API.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-dark" id="metodologia">
+    <div class="container">
+      <div class="section-eyebrow light">Gestión del Proyecto</div>
+      <h2 class="section-title light">Metodología de <span class="accent">Desarrollo</span></h2>
+      <div class="methodology-grid">
+
+       <div class="methodology-card">
+    <div class="method-num">01</div>
+    <h3>Kanban</h3>
+    <p>
+        Organiza las tareas en un tablero con etapas de trabajo
+        (Pendiente, En proceso y Finalizado) para visualizar el avance
+        y realizar seguimiento continuo.
+    </p>
+</div>
+
+<div class="methodology-card methodology-featured">
+    <div class="method-num">02</div>
+    <span class="method-featured-badge">Metodología Principal</span>
+    <h3>Cascada</h3>
+    <p>
+        Fases claramente definidas: Levantamiento de requerimientos,
+        análisis, diseño, desarrollo, pruebas, implementación y
+        mantenimiento.
+    </p>
+</div>
+
+<div class="methodology-card">
+    <div class="method-num">03</div>
+    <h3>Scrum</h3>
+    <p>
+        Marco ágil con sprints iterativos, roles definidos y entregas
+        incrementales del producto.
+    </p>
+</div>
+
+      </div>
+    </div>
+  </section>
+<!-- =====================
+       DIAGRAMA SCRUM
+       ===================== -->
+  <section class="section section-alt" id="scrum">
+    <div class="container">
+      <div class="section-eyebrow">Modelado</div>
+      <h2 class="section-title">Diagrama <span class="accent">SCRUM</span></h2>
+      <div class="diagrams-grid single">
+
+        <div class="diagram-card">
+          <div class="diagram-img-wrap">
+            <img src="IMG/scrum.png" alt="Diagrama SCRUM" class="diagram-img" />
+          </div>
+          <div class="diagram-label">Diagrama SCRUM</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       MAPA DE NAVEGACIÓN
+       ===================== -->
+  <section class="section" id="mapa-navegacion">
+    <div class="container">
+      <div class="section-eyebrow">Estructura del Sitio</div>
+      <h2 class="section-title">Mapa de <span class="accent">Navegación</span></h2>
+      <p class="section-lead">Esquema de las secciones y páginas del sitio web, mostrando cómo se conectan entre sí y el flujo de navegación del usuario.</p>
+      <div class="diagrams-grid single">
+
+        <div class="diagram-card">
+          <div class="diagram-img-wrap">
+            <img src="IMG/mapa_navegacion.png" alt="Mapa de Navegación del Sitio" class="diagram-img" />
+          </div>
+          <div class="diagram-label">Mapa de Navegación</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================
+       MANUAL DE MAPA CORPORATIVO
+       ===================== -->
+  <section class="section section-alt" id="manual-corporativo">
+    <div class="container">
+      <div class="section-eyebrow">Identidad de Marca</div>
+      <h2 class="section-title">Manual de Mapa <span class="accent">Corporativo</span></h2>
+      <p class="section-lead">Lineamientos de identidad visual de la marca: filosofía, paleta de colores, tipografías y usos correctos aplicados en la página web.</p>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">🎯</div>
+          <h3>Misión</h3>
+          <p>Ofrecer una experiencia de compra íntima, segura y discreta, con productos de bienestar y entretenimiento adulto de calidad desde la comodidad del hogar.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔭</div>
+          <h3>Visión</h3>
+          <p>Ser la tienda virtual de referencia en Colombia para el bienestar íntimo, reconocida por su discreción, variedad y excelente experiencia de usuario.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💎</div>
+          <h3>Valores</h3>
+          <p>Discreción, confianza, accesibilidad, respeto y calidad guían cada decisión de diseño y cada interacción con el cliente.</p>
+        </div>
+      </div>
+
+      <h3 class="sub-title" style="margin-top:2.5rem;">Paleta de Colores</h3>
+      <div class="specific-grid">
+        <div class="specific-item">
+          <div class="specific-icon">⬛</div>
+          <p><strong>Negro #000000</strong><br>Fondo principal, encabezados y elementos elegantes.</p>
+        </div>
+        <div class="specific-item">
+          <div class="specific-icon">🟥</div>
+          <p><strong>Rojo #C1121F</strong><br>Botones, promociones, enlaces y llamados a la acción.</p>
+        </div>
+        <div class="specific-item">
+          <div class="specific-icon">⬜</div>
+          <p><strong>Blanco #FFFFFF</strong><br>Textos, fondos secundarios y mejora de legibilidad.</p>
+        </div>
+      </div>
+
+      <h3 class="sub-title" style="margin-top:2.5rem;">Tipografía</h3>
+      <div class="specific-grid">
+        <div class="specific-item">
+          <div class="specific-icon">🅰️</div>
+          <p><strong>Inter</strong> — Títulos, headings y navbar.</p>
+        </div>
+        <div class="specific-item">
+          <div class="specific-icon">🔡</div>
+          <p><strong>Roboto</strong> — Cuerpo de texto y descripciones.</p>
+        </div>
+        <div class="specific-item">
+          <div class="specific-icon">💻</div>
+          <p><strong>Fira Code</strong> — Códigos de pedido, SKUs y referencias.</p>
+        </div>
+      </div>
+
+      <div class="diagrams-grid single" style="margin-top:2.5rem;">
+        <div class="diagram-card">
+          <div class="diagram-img-wrap">
+            <img src="IMG/fondo.png" alt="logo-instintos" class="diagram-img" />
+          </div>
+          <div class="diagram-label">logo-instintos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span>INSTINTOS Sex Shop</span>
+      </div>
+      <p class="footer-tagline">Privacidad · Confianza · Placer</p>
+      <div class="footer-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#introduccion">Introducción</a>
+        <a href="#problema">Problema</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#diagramas">Diagramas</a>
+        <a href="#estandares">Estándares</a>
+        <a href="#metodologia">Metodología</a>
+        <a href="#mapa-navegacion">Mapa de Navegación</a>
+        <a href="#manual-corporativo">Manual Corporativo</a>
+      </div>
+      <p class="footer-copy">© 2025 Instintos Sex Shop </p>
+    </div>
+  </footer>
+
+  <script src="JS/main.js"></script>
+</body>
+</html>
